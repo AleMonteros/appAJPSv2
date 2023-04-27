@@ -24,3 +24,50 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+ion-toolbar{
+    --background : #92a646;
+    --color : #fff
+}
+
+ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+}
+
+.glass-content {
+    background: rgba(19, 63, 176, 0.27);
+    box-shadow: 0 4px 30px rgba(7, 77, 216, 0.1);
+    backdrop-filter: blur(25.3px);
+    -webkit-backdrop-filter: blur(25.3px);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.select{
+    color: #92a646;
+}
+
+.cardone {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.firtsTitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.paragraph{
+    max-width: 100%;
+    text-align: justify;
+    color: #000;
+    opacity: 70%;
+    font-size: small;
+    padding-left: 20px;
+    padding-right: 20px;
+}

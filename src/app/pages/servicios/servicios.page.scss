@@ -1,0 +1,40 @@
+.box{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.service_box {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0;
+    border: 0.5px #0C380B solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.services_icon {
+    padding: 6% 0;
+    width: 28%;
+    height: auto;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.services_icon ion-img {
+    display: block;
+    max-width: 70%;
+    margin: auto;
+}
+
+.service_content {
+    float: left;
+    width: 67%;
+    padding: 0 0 0 4%;
+}
+
+.service_content h4 {
+    color: #0C380B;
+}

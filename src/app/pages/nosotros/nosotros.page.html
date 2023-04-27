@@ -1,0 +1,114 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>AJPS</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <br><br>
+    <ion-item (click)="goToHome()">
+      <ion-icon slot="start" name="home"></ion-icon>
+      <ion-label>
+        Home
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToNosotros()" class="select">
+      <ion-icon slot="start" name="people" color=#92a646></ion-icon>
+      <ion-label>
+        Nosotros
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToServicios()">
+      <ion-icon slot="start" name="bag"></ion-icon>
+      <ion-label>
+        Servicios
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToCredenciales()">
+      <ion-icon slot="start" name="id-card"></ion-icon>
+      <ion-label>
+        Credenciales
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToComercios()">
+      <ion-icon slot="start" name="business"></ion-icon>
+      <ion-label>
+        Comercios
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToElSauce()">
+      <ion-icon slot="start" name="image"></ion-icon>
+      <ion-label>
+        El Sauce
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToContactos()">
+      <ion-icon slot="start" name="mail"></ion-icon>
+      <ion-label>
+        Contactos
+      </ion-label>
+    </ion-item>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Nosotros</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="cardone">
+      <ion-card>
+        <div class="firtsTitle">
+          <ion-text>
+            <h1>Sobre Nosotros</h1>
+          </ion-text>
+        </div>
+        <div>
+          <ion-grid fixed>
+            <div class="paragraph">
+              <ion-text>
+                <p>Nuestra visión, misión y objetivos están orientados a brindarte asistencia en todo momento.</p>
+              </ion-text>
+            </div>
+            <ion-row>
+              <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                <img class="nosimg" src="assets/img/nosotros-img1.png">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <div>
+          <ion-grid fixed>
+            <div class="paragraphTwo">
+              <ion-text>
+                <p>
+                  Somos Asociación de Jubilados y Pensionados de la Provincia de Salta y Familia.
+  
+                  Un grupo de visionarios decidieron en el año 1956 impulsar la creación de esta asociación sin fines
+                  de lucro, con el objetivo de aunar esfuerzos para la defensa de los derechos e intereses de
+                  afiliados en asuntos previsionales y asistenciales.
+  
+                  En la actualidad, la Comisión Directiva se encuentra presidida por el Sr. Aldo Garcia y cuenta con
+                  más de 8.000 asociados en toda la Provincia de Salta, practicando un autentico federalismo con 14
+                  delegaciones en el interior de la provincia.
+  
+                  Hoy en día tenemos como misión la de transformarnos y hacer extensivo los servicios y beneficios a
+                  toda la familia de nuestros socios , siendo pioneros en Argentina en este tipo de acciones sociales
+                </p>
+              </ion-text>
+            </div>
+            <ion-row>
+              <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                <img class="nosimg" src="assets/img/nosotros-img2.png">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-card>
+    </div>
+  </ion-content>
+</div>

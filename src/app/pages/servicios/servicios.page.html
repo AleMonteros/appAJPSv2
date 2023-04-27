@@ -1,0 +1,218 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-label>AJPS</ion-label>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <!-- <div (click)="goToHome()" class="pagination">
+      <ion-icon slot="start" name="home" class="icons"></ion-icon>
+      Home
+    </div> -->
+    <br><br>
+    <ion-item (click)="goToHome()">
+      <ion-icon slot="start" name="home"></ion-icon>
+      <ion-label>
+        Home
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToNosotros()">
+      <ion-icon slot="start" name="people"></ion-icon>
+      <ion-label>
+        Nosotros
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToServicios()" class="select">
+      <ion-icon slot="start" name="bag" color=#92a646></ion-icon>
+      <ion-label>
+        Servicios
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToCredenciales()">
+      <ion-icon slot="start" name="id-card"></ion-icon>
+      <ion-label>
+        Credenciales
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToComercios()">
+      <ion-icon slot="start" name="business"></ion-icon>
+      <ion-label>
+        Comercios
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToElSauce()">
+      <ion-icon slot="start" name="image"></ion-icon>
+      <ion-label>
+        El Sauce
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="goToContactos()">
+      <ion-icon slot="start" name="mail"></ion-icon>
+      <ion-label>
+        Contactos
+      </ion-label>
+    </ion-item>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar class="header">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Servicios</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="cardone">
+      <ion-card>
+        <div class="firtsTitle">
+          <ion-text>
+            <h1>Nuestros Servicios</h1>
+          </ion-text>
+        </div>
+        <div>
+          <ion-grid fixed>
+            <div class="paragraph">
+              <ion-text>
+                <p>
+                  La Asociación de Jubilados y Pensionados de la Provincia de Salta y Familia tiene como finalidad
+                  fomentar el espíritu de unión y solidaridad entre los jubilados y pensionados de la pro
+                  vincia de Salta.
+                </p>
+              </ion-text>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-RB.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Red de Beneficios y Descuentos</h4>
+                  <p>
+                    A través de la red de beneficios brindamos descuentos de hasta el 30% en comercios de Salta y el
+                    Interior para vos y tu familia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-CTS.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Complejo Termal Los Sauces</h4>
+                  <p>
+                    Rodeado de excelente naturaleza a solo 70 km de la ciudad de Salta y 60 km de San Salvador de Jujuy,
+                    donde nuestro equipo le hará vivir una experiencia transformadora.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-D.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Departamento de Deporte, Recreación y Cultura</h4>
+                  <p>
+                    Contamos con más de 15 talleres gratuitos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-T.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Departamento de Turismo - Leg. 15119</h4>
+                  <p>
+                    Para el disfrute de nuestros asociados, brindando turismo salud, social y convencional, con planes de
+                    financiación y descuento por planilla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-LN.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Camping Los Nogales</h4>
+                  <p>
+                    Te ofrecemos la posibilidad de vacacionar en un lugar apto para el descanso, disfrutando de la
+                    comodidad y del contacto con la naturaleza.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-F.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Farmacia Social Propia</h4>
+                  <p>
+                    Disponemos de descuentos y promociones especiales a las que puedes acceder a través de nuestra
+                    Farmacia Social.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-AJ.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Asesoría Jurídica</h4>
+                  <p>
+                    En nuestro departamento jurídico velamos por tu seguridad, ofreciendote una amplia variedad de
+                    servicios jurídicos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="service_box">
+                <div class="services_icon">
+                  <ion-col sizeLg="12" sizeMd="12" sizeXs="12">
+                    <img src="assets/icons/serv-SF.png">
+                  </ion-col>
+                </div>
+                <div class="service_content">
+                  <h4>Salón de Eventos</h4>
+                  <p>
+                    Disponemos de un salón de eventos para 250 personas para reuniones sociales, eventos y conferecias.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ion-grid>
+        </div>
+      </ion-card>
+    </div>
+  </ion-content>
+</div>

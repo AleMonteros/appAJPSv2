@@ -1,0 +1,24 @@
+ion-content {
+    --ion-background-color: url(/assets/img/fondo-prueba.png);
+    --color: white;
+}
+
+img {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 60%;
+    max-width: 200px;
+}
+
+.btn{
+    width: 300px;
+    background-color: #fff;
+    opacity: 70%;
+    color: rgb(0, 0, 0);
+    padding: 25px 70px 25px 70px;
+    border-radius: 45px;
+    border: 2px solid #0C380B;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
