@@ -86,9 +86,9 @@
               </ion-text>
             </div>
             <div class="caja-dni">
-              <ion-input label="DNI" label-placement="floating" fill="outline" placeholder="Ingrese su DNI"></ion-input>
+              <ion-input type="number" label="DNI" label-placement="floating" fill="outline" placeholder="Ingrese su DNI" [(ngModel)]="dni"></ion-input>
               <div>
-                <button type="submit" name="submit" class="btn-cred">Generar</button>
+                <button type="submit" name="submit" class="btn-cred" (click)="generar()">Generar</button>
               </div>
             </div>
           </ion-grid>
