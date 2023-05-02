@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController, ToastController } from '@ionic/angular';
+import { error } from 'console';
+import { MysqlService } from 'src/app/servicies/mysql.service';
 
 @Component({
   selector: 'app-credenciales',
@@ -20,7 +22,8 @@ export class CredencialesPage implements OnInit {
   constructor(
     private router : Router,
     private alertController : AlertController,
-    private toastController : ToastController
+    private toastController : ToastController,
+    private mysqlService : MysqlService
   ) { }
 
   ngOnInit() {
@@ -68,6 +71,20 @@ export class CredencialesPage implements OnInit {
       return false;
     }else{
       this.mostrarAlerta('Validando los datos ingresados, por favor espere un momento ..')
+
+      // --- Realizar Consulta SQL
+      this.mysqlService['query']('SELECT * FROM credencailes WHERE DNI = ?', [this.dni])
+      .then((rows :any ) => {
+        if(rows.length > 0){
+          console.log(rows[0]);
+        }else{
+          console.log('No se encontro ningun registro con el DNI ingresado.');
+        }
+      })
+      .catch((error : any) =>{
+        console.log('Error al realizar la consulta SQL : ', error)
+      })
+
       return true;
     }
   }
