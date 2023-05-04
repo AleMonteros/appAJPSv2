@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AlertController, ToastController } from '@ionic/angular';
 import { error } from 'console';
 import { MysqlService } from 'src/app/servicies/mysql.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-credenciales',
@@ -23,7 +24,8 @@ export class CredencialesPage implements OnInit {
     private router : Router,
     private alertController : AlertController,
     private toastController : ToastController,
-    private mysqlService : MysqlService
+    private mysqlService : MysqlService,
+    private http : HttpClient
   ) { }
 
   ngOnInit() {
@@ -43,10 +45,10 @@ export class CredencialesPage implements OnInit {
     this.router.navigate(['/credenciales'])
   }
   goToComercios(){
-    this.router.navigate(['/comercios'])
+    window.open("https://www.asocdejubsalta.com.ar/#section-6", "-blank");
   }
   goToElSauce(){
-    this.router.navigate(['/home'])
+    window.open("https://www.elsaucesalta.com.ar/es/", "-blank");
   }
   goToContactos(){
     this.router.navigate(['/contactos'])
@@ -73,18 +75,21 @@ export class CredencialesPage implements OnInit {
       this.mostrarAlerta('Validando los datos ingresados, por favor espere un momento ..')
 
       // --- Realizar Consulta SQL
-      this.mysqlService['query']('SELECT * FROM credencailes WHERE DNI = ?', [this.dni])
-      .then((rows :any ) => {
-        if(rows.length > 0){
-          console.log(rows[0]);
-        }else{
-          console.log('No se encontro ningun registro con el DNI ingresado.');
-        }
-      })
-      .catch((error : any) =>{
-        console.log('Error al realizar la consulta SQL : ', error)
-      })
-
+      // const url = 'http://localhost/Ajps-conexion/consulta.php?dni=' + this.dni;
+      // this.http.get(url).subscribe(
+      //   (data :any) => {
+      //   console.log(data);
+      //   if(data.length === 0){
+      //     this.mostrarAlerta('El DNI ingresado no esta registrado en nuestra base de datos');
+      //   } else {
+      //     this.mostrarAlerta('Los datos del usuario son: ' + JSON.stringify(data[0]));
+      //   }
+      //   },
+      //   error => {
+      //     console.log('Error al realizar la consulta' , error);
+      //     this.mostrarAlerta('Ocurrio un error al validar los datos. Intente nuevamente mas tarde.');
+      //   }
+      // );
       return true;
     }
   }

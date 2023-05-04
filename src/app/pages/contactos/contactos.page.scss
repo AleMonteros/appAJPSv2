@@ -1,0 +1,44 @@
+.container-cont {
+    margin: 50px 0 50px 0 ; 
+}
+
+.firtsColumn {
+    margin-bottom: 15px;
+}
+
+.cont{
+    --ion-grid-width: 50%;
+  
+    --ion-grid-width-xs: 50%;
+    --ion-grid-width-sm: 288px;
+    --ion-grid-width-md: 384px;
+    --ion-grid-width-lg: 480px;
+    --ion-grid-width-xl: 570px;
+}
+
+.btntwo {
+    max-width: 100%;
+    background: #fff;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #0C380B;
+    border-radius: 30px;
+    width: 97px;
+}
+
+.btntwo-center{
+    max-width: 100%;
+    background: #fff;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #0C380B;
+    margin-left: 17px;
+    margin-right: 17px;
+    border-radius: 30px;
+    width: 97px;
+}
+
+ion-icon {
+    color: #0C380B;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}

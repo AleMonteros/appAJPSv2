@@ -24,10 +24,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/credenciales/credenciales.module').then( m => m.CredencialesPageModule)
   },
   {
-    path: 'comercios',
-    loadChildren: () => import('./pages/comercios/comercios.module').then( m => m.ComerciosPageModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },

@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+https: any;
 
   constructor(
     private router : Router
@@ -30,11 +31,15 @@ export class HomePage implements OnInit {
   }
 
   goToComercios(){
-    this.router.navigate(["/comercios"])
+    window.open("https://www.asocdejubsalta.com.ar/#section-6", "-blank");
   }
 
   goToContactos(){
     this.router.navigate(["/contactos"])
+  }
+
+  goToElSauce(){
+    window.open("https://www.elsaucesalta.com.ar/es/", "-blank");
   }
 
 }

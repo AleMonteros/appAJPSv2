@@ -29,10 +29,10 @@ export class ServiciosPage implements OnInit {
       this.router.navigate(['/credenciales'])
     }
     goToComercios(){
-      this.router.navigate(['/comercios'])
+      window.open("https://www.asocdejubsalta.com.ar/#section-6", "-blank");
     }
     goToElSauce(){
-      this.router.navigate(['/home'])
+      window.open("https://www.elsaucesalta.com.ar/es/", "-blank");
     }
     goToContactos(){
       this.router.navigate(['/contactos'])
