@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'intro',
     loadChildren: () => import('./pages/intro/intro.module').then( m => m.IntroPageModule)
   },
+  {
+    path: 'credencial-digital',
+    loadChildren: () => import('./pages/credencial-digital/credencial-digital.module').then( m => m.CredencialDigitalPageModule)
+  },
 ];
 
 @NgModule({
