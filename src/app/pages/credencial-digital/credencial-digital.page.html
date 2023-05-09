@@ -1,13 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>credencialDigital</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Credencial Digital</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">credencialDigital</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div>
+    <img src="assets/img/credencial-digital.png" alt="">
+    <div class="container">
+      <ion-text class="ion-text-center">
+        <p class="credNA">Nombre del Asociado</p>
+        <p class="credDNI">DNI : 99999999 </p>
+        <p class="credFE">Emitida el dd/mm/yyyy</p>
+      </ion-text>
+    </div>
+  </div>
 </ion-content>
