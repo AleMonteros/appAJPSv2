@@ -90,6 +90,7 @@ export class CredencialesPage implements OnInit {
       //     this.mostrarAlerta('Ocurrio un error al validar los datos. Intente nuevamente mas tarde.');
       //   }
       // );
+      
       return true;
     }
   }
