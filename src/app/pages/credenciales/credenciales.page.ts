@@ -83,6 +83,7 @@ export class CredencialesPage implements OnInit {
       //     this.mostrarAlerta('El DNI ingresado no esta registrado en nuestra base de datos');
       //   } else {
       //     this.mostrarAlerta('Los datos del usuario son: ' + JSON.stringify(data[0]));
+      //       ---- Redireccionamiento a credencial-digital mostrando los datos del usaurio segun el dni ingresado ----
       //   }
       //   },
       //   error => {
