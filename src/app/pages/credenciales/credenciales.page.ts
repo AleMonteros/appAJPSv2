@@ -74,24 +74,19 @@ export class CredencialesPage implements OnInit {
     }else{
       this.mostrarAlerta('Validando los datos ingresados, por favor espere un momento ..')
 
-      // --- Realizar Consulta SQL
+      // // --- Realizar Consulta SQL
       // const url = 'http://localhost/Ajps-conexion/consulta.php?dni=' + this.dni;
       // this.http.get(url).subscribe(
-      //   (data :any) => {
-      //   console.log(data);
-      //   if(data.length === 0){
-      //     this.mostrarAlerta('El DNI ingresado no esta registrado en nuestra base de datos');
-      //   } else {
-      //     this.mostrarAlerta('Los datos del usuario son: ' + JSON.stringify(data[0]));
-      //       ---- Redireccionamiento a credencial-digital mostrando los datos del usaurio segun el dni ingresado ----
-      //   }
-      //   },
-      //   error => {
-      //     console.log('Error al realizar la consulta' , error);
-      //     this.mostrarAlerta('Ocurrio un error al validar los datos. Intente nuevamente mas tarde.');
+      //   (data : any ) => {
+      //     console.log(data);
+      //     if(data.length === 0 ){
+      //       this.mostrarAlerta('El DNI ingresado no esta registrado en nuestra base de datos');
+      //     }else {
+      //       this.mostrarAlerta('Los datos del usuario son: ' + JSON.stringify(data[0]));
+      //   // ---- Redireccionamiento a credencial-digital mostrando los datos del usaurio segun el dni ingresado ----
+      //       }
       //   }
       // );
-      
       return true;
     }
   }
