@@ -70,4 +70,8 @@ export class ContactosPage implements OnInit {
   contTelefono(){
     window.open("tel:3876856999", "-blank");
   }
+
+  contSitioWeb(){
+    window.open("https://www.asocdejubsalta.com.ar/");
+  }
 }
