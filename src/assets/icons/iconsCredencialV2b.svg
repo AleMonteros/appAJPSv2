@@ -1,8 +1,8 @@
 <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="150" height="150" rx="50" fill="#92A464"/>
 <g clip-path="url(#clip0_318_44)">
 <path d="M138 2H13V147H138V2Z" fill="url(#pattern0)"/>
 </g>
+<rect x="3" y="3" width="144" height="144" rx="47" stroke="#92A464" stroke-width="6"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_318_44" transform="matrix(0.00195312 0 0 0.0015191 0 0.111111)"/>

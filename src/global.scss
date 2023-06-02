@@ -26,7 +26,7 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 ion-toolbar{
-    --background : #92a646;
+    --background : #adb218;
     --color : #fff
 }
 
@@ -56,7 +56,7 @@ ion-menu::part(container) {
 }
 
 .select{
-    color: #92a646;
+    color: #adb218;
 }
 
 .cardone {
@@ -70,7 +70,7 @@ ion-menu::part(container) {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #000;
+    color: #adb218;
     font-family: sans-serif;
 }
 
@@ -96,7 +96,7 @@ ion-item {
 }
 
 ion-icon {
-    font-size: 35px;
+    font-size: 38px;
     cursor: pointer;
 }
 
